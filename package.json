@@ -1,6 +1,6 @@
 {
    "name": "package-json-cli-editor",
-   "version": "1.0.0",
+   "version": "1.0.1",
    "description": "Silly package.json interactive prompt editor",
    "main": "index.js",
    "license": "MIT",
@@ -23,6 +23,6 @@
       "test": "jasmine"
    },
    "bin": {
-     "pkged": "index.js"
+      "pkged": "index.js"
    }
 }
