@@ -4,6 +4,11 @@
    "description": "Silly package.json interactive prompt editor",
    "main": "index.js",
    "license": "MIT",
+   "author": "muaddib",
+   "repository": {
+      "type": "git",
+      "url": "git://github.com/njd5475/package-json-cli-editor.git"
+   },
    "dependencies": {
       "chalk": "^2.4.1",
       "clear": "^0.1.0",
