@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 require('./lib/setup-inquirer');
 const jsonfile = require('jsonfile');
 const chalk = require('chalk');
