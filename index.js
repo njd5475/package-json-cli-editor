@@ -63,7 +63,7 @@ const run = async() => {
 		questions.message = 'List of keywords separated by commas?';
 
 		const { keywords } = await inquirer.prompt(questions);
-		pkgFile.keywords = keywords.split(',').map(k => k.trim()).join(',');
+		pkgFile.keywords = keywords.split(',').map(k => k.trim());
 		console.log(chalk.red(pkgFile.keywords));
 		await jsonfile.writeFile(packageFile, pkgFile, { spaces: 3 });
 	}else if(option == 'Bump version') {
