@@ -18,7 +18,7 @@ const something = (v) => v.length > 0 ? true : 'Please enter something!';
 
 const inquirer = require('inquirer');
 
-const options = ['View Key','Add a script tag','Bump version','Remove key from package.json','Quit'];
+const options = ['View Key','Add a script tag', 'Add keywords list','Bump version','Remove key from package.json','Quit'];
 
 const questions = {};
 
@@ -57,7 +57,15 @@ const run = async() => {
     pkgFile.scripts = pkgFile.scripts || {};
     pkgFile.scripts[scriptName] = command;
     await jsonfile.writeFile(packageFile, pkgFile, { spaces: 3 }, (err) => console.log(err));
+  }else if(option == 'Add keywords list') {
+		questions.name = 'keywords';
+		questions.type = 'input';
+		questions.message = 'List of keywords separated by commas?';
 
+		const { keywords } = await inquirer.prompt(questions);
+		pkgFile.keywords = keywords.split(',').map(k => k.trim()).join(',');
+		console.log(chalk.red(pkgFile.keywords));
+		await jsonfile.writeFile(packageFile, pkgFile, { spaces: 3 });
 	}else if(option == 'Bump version') {
 		var semver = require('semver');
 		questions.name = 'part';

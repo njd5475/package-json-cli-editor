@@ -30,5 +30,6 @@
    "devDependencies": {
       "jasmine": "^3.3.0",
       "jest": "^24.1.0"
-   }
+   },
+   "keywords": "tools,cli,cli-tools,command line tools,command line"
 }
