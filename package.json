@@ -1,6 +1,6 @@
 {
    "name": "package-json-cli-editor",
-   "version": "1.2.1",
+   "version": "2.0.0",
    "description": "Silly package.json interactive prompt editor",
    "main": "index.js",
    "license": "MIT",
@@ -33,10 +33,9 @@
       "jest": "^24.9.0"
    },
    "keywords": [
-      "tools",
+      "vanity tool",
+      "tool",
       "cli",
-      "cli-tools",
-      "command line tools",
-      "command line"
+      "console"
    ]
 }
