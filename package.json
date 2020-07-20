@@ -18,7 +18,7 @@
       "inquirer-checkbox-plus-prompt": "^1.0.1",
       "jsonfile": "^5.0.0",
       "log-symbols": "^2.2.0",
-      "minimist": "^1.2.0",
+      "minimist": "^1.2.5",
       "semver": "^5.6.0"
    },
    "scripts": {
