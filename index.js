@@ -1,5 +1,10 @@
 #!/usr/bin/env node
 
+/**
+ * Some helpful shortcut prompts for modifying your package json. 
+ * See docs for package.json details: https://docs.npmjs.com/files/package.json
+ */
+
 require('./lib/setup-inquirer');
 const chalk = require('chalk');
 const clear = require('clear');
