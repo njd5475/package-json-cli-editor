@@ -9,7 +9,6 @@ require('./lib/setup-inquirer');
 const chalk = require('chalk');
 const clear = require('clear');
 const figlet = require('figlet');
-const fs = require('fs');
 
 clear();
 console.log(
