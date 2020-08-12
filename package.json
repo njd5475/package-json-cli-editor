@@ -1,6 +1,6 @@
 {
    "name": "package-json-cli-editor",
-   "version": "1.3.3",
+   "version": "1.3.4",
    "description": "Silly package.json interactive prompt editor",
    "main": "index.js",
    "license": "MIT",
