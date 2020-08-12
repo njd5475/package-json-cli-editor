@@ -34,7 +34,7 @@ const handler = new OptionHandler(questioner);
 
       if(handleFunc.handle) {
         await handleFunc.handle(questioner);
-      }else{
+      }else if(handleFunc) {
         await handleFunc();
       }
 
