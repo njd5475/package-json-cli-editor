@@ -32,7 +32,9 @@ const handler = new OptionHandler(questioner);
 
       const handleFunc = handler.handlerByOption[option];
 
-      if(handleFunc) {
+      if(handleFunc.handle) {
+        await handleFunc.handle(questioner);
+      }else{
         await handleFunc();
       }
 
