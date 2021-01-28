@@ -6,9 +6,18 @@
  */
 
 require('./lib/setup-inquirer');
+const yargs = require('yargs/yargs');
 const chalk = require('chalk');
 const clear = require('clear');
 const figlet = require('figlet');
+const loadArgumentProcessor = require('./lib/command_argument_process');
+
+// see if we have any arguments if we do skip to processing by argument
+if(process.argv.length > 2) {
+  console.log(`running commands from arguments`);
+  loadArgumentProcessor('commands', yargs(process.argv.slice(2))).help('h').alias('h', 'help').argv;
+  process.exit();
+}
 
 clear();
 console.log(
